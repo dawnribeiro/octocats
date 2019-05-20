@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import Cat from './Cat'
 
-cats = [{
-  number:
-  src:
-  name: 
-  img:
-}
-]
+// cats = [{
+//   number:
+//   src:
+//   name:
+//   img:
+// }
+// ]
 
 class Octocats extends Component {
   render() {
@@ -32,6 +32,17 @@ class Octocats extends Component {
             name="Doctocat Brown"
             img="https://github.com/jonrohan.png"
           />
+          {/* {cats.map(cat => {
+            return (
+              <Cat
+                key={cat.name}
+                number={cat.number}
+                src={cat.src}
+                name={cat.name}
+                img={cat.img}
+              />
+            )
+          })} */}
           {/* 
           <div class="outer-image">
             <img
