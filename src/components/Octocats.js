@@ -1,13 +1,93 @@
 import React, { Component } from 'react'
 import Cat from './Cat'
 
-// cats = [{
-//   number:
-//   src:
-//   name:
-//   img:
-// }
-// ]
+const Cats = [
+  {
+    number: '#68',
+    src: 'https://octodex.github.com/images/doctocat-brown.jpg',
+    name: 'Doctocat Brown',
+    img: 'https://github.com/jonrohan.png'
+  },
+  {
+    number: '#56',
+    src: 'https://octodex.github.com/images/octocat-de-los-muertos.jpg',
+    name: 'Octocat De Los Muertos',
+    img: 'https://github.com/cameronmcefee.png'
+  },
+
+  {
+    number: '#105',
+    src: 'https://octodex.github.com/images/dunetocat.png',
+    name: 'Dunetocat',
+    img: 'https://github.com/JohnCreek.png'
+  },
+  {
+    number: '#102',
+    src: 'https://octodex.github.com/images/daftpunktocat-thomas.gif',
+    name: 'Daftpunktocat',
+    img: 'https://github.com/jeejkang.png'
+  },
+  {
+    number: '#78',
+    src: 'https://octodex.github.com/images/heisencat.png',
+    name: 'Heisencat',
+    img: 'https://github.com/jonrohan.png'
+  },
+  {
+    number: '#143',
+    src: 'https://octodex.github.com/images/boxertocat_octodex.jpg',
+    name: 'Boxertocat',
+    img: 'https://github.com/rubyjazzy.png'
+  },
+  {
+    number: '#136',
+    src: 'https://octodex.github.com/images/justicetocat.jpg',
+    name: 'Justicetocat',
+    img: 'https://github.com/heyhayhay.pn'
+  },
+  {
+    number: '#120',
+    src: 'https://octodex.github.com/images/gobbleotron.gif',
+    name: 'Gobble - o - tron',
+    img: 'https://github.com/JohnCreek.png'
+  },
+  {
+    number: '#36',
+    src: 'https://octodex.github.com/images/xtocat.jpg',
+    name: 'Xtocat',
+    img: 'https://github.com/cameronmcefee.png'
+  },
+  {
+    number: '#114',
+    src: 'https://octodex.github.com/images/saritocat.png',
+    name: 'Saritocat',
+    img: 'https://github.com/JohnCreek.png'
+  },
+  {
+    number: '#109',
+    src: 'https://octodex.github.com/images/yaktocat.png',
+    name: 'Yaktocat',
+    img: 'https://github.com/jeejkang.png'
+  },
+  {
+    number: '#105',
+    src: 'https://octodex.github.com/images/dunetocat.png',
+    name: 'Dunetocat',
+    img: 'https:github.com/JohnCreek.png'
+  },
+  {
+    number: '#25',
+    src: 'https://octodex.github.com/images/ironcat.jpg',
+    name: 'IronCat',
+    img: 'https://github.com/cameronmcefee.png'
+  },
+  {
+    number: '#83',
+    src: 'https://octodex.github.com/images/murakamicat.png',
+    name: 'Murakamicat',
+    img: 'https://github.com/billyroh.png'
+  }
+]
 
 class Octocats extends Component {
   render() {
@@ -26,13 +106,7 @@ class Octocats extends Component {
             name="Stormtroopocat"
             img="https://github.com/jeejkang.png"
           />
-          <Cat
-            numbers="#68"
-            src="https://octodex.github.com/images/doctocat-brown.jpg"
-            name="Doctocat Brown"
-            img="https://github.com/jonrohan.png"
-          />
-          {/* {cats.map(cat => {
+          {Cats.map(cat => {
             return (
               <Cat
                 key={cat.name}
@@ -42,7 +116,7 @@ class Octocats extends Component {
                 img={cat.img}
               />
             )
-          })} */}
+          })}
           {/* 
           <div class="outer-image">
             <img
